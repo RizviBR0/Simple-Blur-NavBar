@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: url("https://images.unsplash.com/photo-1650473395434-8674d953ef2f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: rgba(0, 0, 0, 0.145);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(15px);
+}
+
+.logo {
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  margin-left: 40px;
+  font-weight: 500;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
